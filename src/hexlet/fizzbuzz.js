@@ -1,16 +1,11 @@
-const fizzBuzz = (begin, end) => {
-  for (let i = begin; i <= end; i += 1) {
-    if (i % 3 === 0 && i % 5 === 0)
-      console.log('FizzBuzz');
-    else if (i % 3 === 0)
-      console.log('Fizz');
-    else if (i % 5 === 0)
-      console.log('Buzz');
-    else 
-      console.log(i);
-    }
-  
-    return '';
-  };
-  
-  export default fizzBuzz;
+
+export default (num) => {
+  if (num % 3 === 0 && num % 5 === 0) {
+    return 'FIZZBUZZ';
+  } else if (num % 3 === 0) {
+    return 'FIZZ';
+  } else if (num % 5 === 0) {
+    return 'BUZZ';
+  }
+  return num.toString();
+};
