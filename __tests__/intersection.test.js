@@ -1,7 +1,7 @@
 import intersection from '../src/hexlet/intersection';
 
 describe('Intersection', () => {
-  it('should works', () => {
+  it('should return intersection of two arrays', () => {
     const result = intersection([], []);
     expect(result).toEqual([]);
 
