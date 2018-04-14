@@ -36,7 +36,8 @@
   "homepage": "https://github.com/freemolag/js-practice#readme",
   "dependencies": {
     "gulp": "^4.0.0",
-    "js-combinatorics": "^0.5.3"
+    "js-combinatorics": "^0.5.3",
+    "lodash": "^4.17.5"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
