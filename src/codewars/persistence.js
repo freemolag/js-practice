@@ -1,13 +1,9 @@
-const persistence = (num) => {
-  const iter = (item, acc) => {
-    if (item < 10) {
-      return acc;
-    }
-    const mmultiplyNum = String(item).split('').reduce((a, b) => a * b);
-    return iter(mmultiplyNum, acc + 1);
-  };
-
-  return iter(num, 0);
+const persistence = (num, acc = 0) => {
+  if (num < 10) {
+    return acc;
+  }
+  const result = String(num).split('').reduce((a, b) => a * b);
+  return persistence(result, acc + 1);
 };
 
 export default persistence;
